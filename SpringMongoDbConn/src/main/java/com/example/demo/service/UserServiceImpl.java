@@ -22,13 +22,13 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public UserModel update(UserModel u, String id) {
-		// TODO Auto-generated method stub
-		return null;
+		u.setId(id);
+		return repo.save(u);
 	}
 
 	@Override
-	public void delete(String id) {
-		UserModel entity=getByMobile(id);
+	public void delete(String mobile) {
+		UserModel entity=getByMobile(mobile);
 		
 		repo.delete(entity);
 		

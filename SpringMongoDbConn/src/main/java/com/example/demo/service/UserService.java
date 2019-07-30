@@ -14,7 +14,7 @@ public interface UserService {
 	public UserModel getFullName(String fname);
 	
 	public UserModel update(UserModel u,String id);
-	public void delete(String id);
+	public void delete(String mobile);
 	public List<UserModel> getAll();
 	
 	

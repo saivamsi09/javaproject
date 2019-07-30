@@ -8,7 +8,7 @@ public class UserModel {
 	@Id
 	private String id;
 	private String fullName;
-	private String Mobile;
+	private String mobile;
 	private String address;
 	private String gender;
 	private String adher;
@@ -25,10 +25,10 @@ public class UserModel {
 		this.fullName = fullName;
 	}
 	public String getMobile() {
-		return Mobile;
+		return mobile;
 	}
 	public void setMobile(String mobile) {
-		Mobile = mobile;
+		this.mobile = mobile;
 	}
 	public String getAddress() {
 		return address;
